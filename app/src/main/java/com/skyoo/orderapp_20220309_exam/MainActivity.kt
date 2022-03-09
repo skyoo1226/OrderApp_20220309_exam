@@ -18,8 +18,16 @@ class MainActivity : AppCompatActivity() {
     fun setupEvents() {
 
     }
+//    MainViewPagerAdapter를 mAdapter에 넣어 화면의 뷰페이저로 보이게 함
     fun setValues() {
         mAdapter = MainViewPagerAdapter( supportFragmentManager )
         mainViewPager.adapter = mAdapter
+
+//    지금은 2페이지이지만, 나중에 도전과제로 3페이지의 뷰페이저로 구현 하기 위해, 3을 씀
+//    이것은 재사용성으로 3장의 화면을 모두 메모리에 넣기 위함
+        mainViewPager.offscreenPageLimit = 3
+
+//    메인 뷰페이저와 연결, 상단 탭으로 움직일 수 있게 함
+        mainTabLayout.setupWithViewPager(mainViewPager)
     }
 }
