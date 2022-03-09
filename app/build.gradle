@@ -35,10 +35,10 @@ android {
 dependencies {
 // 라이브러리 추가
 //    이미지원형, 액션바
-    implementation 'com.github.bumptech.glide:glide:4.13.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
-    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
+//    implementation 'com.github.bumptech.glide:glide:4.13.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+//    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
+//    implementation 'de.hdodenhof:circleimageview:3.1.0'
 //    4개의 라이브러리
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
