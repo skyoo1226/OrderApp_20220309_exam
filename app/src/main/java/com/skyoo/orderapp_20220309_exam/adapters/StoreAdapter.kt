@@ -9,9 +9,8 @@ import com.skyoo.orderapp_20220309_exam.R
 import com.skyoo.orderapp_20220309_exam.datas.StoreData
 
 class StoreAdapter(
-    val mContext: Context,
-//    layout의 store_list_item.xml을 불러오기 위해 Int값으로 정함
-    val resId: Int,
+    val mContext: Context,      // 어느화면에서 쓸지
+    val resId: Int,             // layout의 store_list_item.xml을 불러오기 위해 Int값으로 정함
     val mList: ArrayList<StoreData>
 ) : ArrayAdapter<StoreData>(mContext, resId, mList) {
 
