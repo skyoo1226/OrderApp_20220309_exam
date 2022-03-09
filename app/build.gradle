@@ -33,11 +33,10 @@ android {
 }
 
 dependencies {
-// 4개 라이브러리 추가
-//    이미지원형, 액션바
-//    implementation 'com.github.bumptech.glide:glide:4.13.0'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
+//    인터넷 홈페이지에서 이미지 로고를 불러오는 라이브러리
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 //    별점 넣는 라이브러리 compile은 implementation로 이름 변경
     implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
 //    써클이미지(원형이미지) 라이브러리
