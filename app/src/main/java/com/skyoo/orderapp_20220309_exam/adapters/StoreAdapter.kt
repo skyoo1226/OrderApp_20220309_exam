@@ -43,7 +43,7 @@ class StoreAdapter(
 //    logoUrl에 있는 data를 가져와서 imLogo에 넣어준다.
          Glide.with(mContext).load(data.logoUrl).into(imLogo)
 
-        return row
+         return row
 
     }
 }
