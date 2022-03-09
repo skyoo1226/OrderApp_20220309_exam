@@ -23,7 +23,7 @@ class StoreAdapter(
             tempRow = LayoutInflater.from(mContext).inflate(R.layout.store_list_item, null)
         }
         val row = tempRow!!
-    return row
+        return row
 
     }
 }
