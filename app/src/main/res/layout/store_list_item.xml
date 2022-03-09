@@ -37,7 +37,9 @@
             app:srb_numStars="5"
             app:srb_starWidth="15dp"
             app:srb_starHeight="15dp"
-            app:srb_starPadding="2dp"/>
+            app:srb_starPadding="2dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="true" />
 
     </LinearLayout>
 

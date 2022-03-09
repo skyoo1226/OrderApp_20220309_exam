@@ -42,6 +42,9 @@ class StoreAdapter(
 //    에서 this 대신 mContext를 써야 함.
 //    logoUrl에 있는 data를 가져와서 imLogo에 넣어준다.
          Glide.with(mContext).load(data.logoUrl).into(imLogo)
+//    깃허브 레이팅바 라이브러리에서는 코드를 setRating(3);로 쓰라고 하지만 이건 java 코드이므로 코틀린에서는 rating을 쓴다.
+//    타입 을 Float로(Double과 비슷한 의미) 바꿔서 사용
+         scoreRatingBar.rating = data.score.toFloat()
 
          return row
 
