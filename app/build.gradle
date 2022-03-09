@@ -37,7 +37,9 @@ dependencies {
 //    이미지원형, 액션바
 //    implementation 'com.github.bumptech.glide:glide:4.13.0'
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
-//    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
+
+//    별점 넣는 라이브러리 compile은 implementation로 이름 변경
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
 //    써클이미지(원형이미지) 라이브러리
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
