@@ -21,6 +21,5 @@ class MainActivity : AppCompatActivity() {
     fun setValues() {
         mAdapter = MainViewPagerAdapter( supportFragmentManager )
         mainViewPager.adapter = mAdapter
-
     }
 }
