@@ -34,6 +34,8 @@ class StoreAdapter(
         val imLogo = row.findViewById<ImageView>(R.id.imgLogo)
         val txtName = row.findViewById<TextView>(R.id.txtName)
         val scoreRatingBar = row.findViewById<BaseRatingBar>(R.id.scoreRatingBar)
+        //여기에 밸유값으로 폰넘버가 들어가야 함.
+
 //  store_list_item.xml에서 가게이름(id - txtName)을 가져와 뿌림.
         txtName.text = data.name
 //  인터넷 주소에서 이미지(로고)를 가지고 와 뿌리는 라이브러리 Glide 사용.
