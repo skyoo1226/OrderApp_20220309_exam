@@ -3,15 +3,19 @@
     package="com.skyoo.orderapp_20220309_exam">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OrderApp_20220309_exam">
+        android:theme="@style/Theme.OrderApp_20220309_exam"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ViewStoreDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
