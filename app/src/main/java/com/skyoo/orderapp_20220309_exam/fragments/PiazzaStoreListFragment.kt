@@ -1,11 +1,13 @@
 package com.skyoo.orderapp_20220309_exam.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.skyoo.orderapp_20220309_exam.R
+import com.skyoo.orderapp_20220309_exam.ViewStoreDetailActivity
 import com.skyoo.orderapp_20220309_exam.adapters.StoreAdapter
 import com.skyoo.orderapp_20220309_exam.datas.StoreData
 import kotlinx.android.synthetic.main.fragment_pizza_store_list.*
@@ -40,11 +42,11 @@ class PiazzaStoreListFragment : Fragment() {
 
          pizzaStoreListView.setOnItemClickListener { adapterView, view, position, l ->
 
-              val clickedStore = mPizzaStoreList[position]
+             val clickedStore = mPizzaStoreList[position]
 
-              val myIntent = Intent(requireContext(), ViewStoreDetailActivity::class.java)
-              myIntent.putExtra("store", clickedStore)
-              startActivity(myIntent)
+             val myIntent = Intent(requireContext(), ViewStoreDetailActivity::class.java)
+             myIntent.putExtra("store", clickedStore)
+             startActivity(myIntent)
 
          }
     }

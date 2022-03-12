@@ -34,7 +34,6 @@ class ViewStoreDetailActivity : AppCompatActivity() {
                     val myUri = Uri.parse("tel:${mStoreData.phoneNum}")
                     val myIntent = Intent( Intent.ACTION_CALL, myUri )
                     startActivity(myIntent)
-
                 }
 
                 override fun onPermissionDenied(deniedPermissions: MutableList<String>?) {

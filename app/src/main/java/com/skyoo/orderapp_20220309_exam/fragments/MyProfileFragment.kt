@@ -32,7 +32,7 @@ class MyProfileFragment : Fragment() {
          btnEditNickname.setOnClickListener {
 
              val myIntent = Intent(requireContext(), EditNicknameActivity::class.java)
-             startActivity(myIntent, REQ_CODE_NICKNAME)
+             startActivityForResult(myIntent, REQ_CODE_NICKNAME)
          }
     }
 
