@@ -13,7 +13,9 @@ import com.skyoo.orderapp_20220309_exam.datas.StoreData
 import kotlinx.android.synthetic.main.activity_view_store_detail.*
 
 class ViewStoreDetailActivity : AppCompatActivity() {
+
     lateinit var mStoreData: StoreData
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_store_detail)
@@ -40,7 +42,6 @@ class ViewStoreDetailActivity : AppCompatActivity() {
                     Toast.makeText(this@ViewStoreDetailActivity,  "전화 연결을 하려면, 통화 권한이 필요합니다.", Toast.LENGTH_SHORT).show()
 
                 }
-
             }
 
             TedPermission.create()
@@ -49,10 +50,10 @@ class ViewStoreDetailActivity : AppCompatActivity() {
                 .check()
 
         }
-
     }
 
     fun setValues() {
+
         txtName.text = mStoreData.name
         Glide.with(this).load(mStoreData.logoUrl).into(imgLogo)
         txtPhoneNum.text = mStoreData.phoneNum

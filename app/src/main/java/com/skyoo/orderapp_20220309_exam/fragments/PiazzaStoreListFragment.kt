@@ -46,9 +46,6 @@ class PiazzaStoreListFragment : Fragment() {
               myIntent.putExtra("store", clickedStore)
               startActivity(myIntent)
 
-
+         }
     }
-
-}
-
 }
