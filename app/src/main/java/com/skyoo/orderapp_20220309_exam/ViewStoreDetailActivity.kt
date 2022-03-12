@@ -1,8 +1,16 @@
 package com.skyoo.orderapp_20220309_exam
 
+import android.Manifest
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Toast
+import com.bumptech.glide.Glide
+import com.gun0912.tedpermission.PermissionListener
+import com.gun0912.tedpermission.normal.TedPermission
+import com.skyoo.orderapp_20220309_exam.datas.StoreData
+import kotlinx.android.synthetic.main.activity_view_store_detail.*
 
 class ViewStoreDetailActivity : AppCompatActivity() {
     lateinit var mStoreData: StoreData
